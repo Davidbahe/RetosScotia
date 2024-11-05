@@ -49,7 +49,6 @@ public class ListaEnlazada {
         return false;
     }
 
-
     public String obtener(int valor) {
         Nodo actual = this.cabeza;
         String posiciones = "";
@@ -67,8 +66,7 @@ public class ListaEnlazada {
         return posiciones;
     }
 
-
-    public void imprimir() {
+   public void imprimir() {
         if (this.cabeza == null) {
             System.out.println("Lista vacia");
         } else {
@@ -82,30 +80,4 @@ public class ListaEnlazada {
             System.out.println(mensaje);
         }
     }
-
-
-    public void eliminarIndex(int index) {
-        Nodo actual = this.cabeza;
-        Nodo previo = null;
-        int contador = 0;
-
-        while (actual != null) {
-
-            if (contador == index) {
-                if (previo == null) {
-                    this.cabeza = actual.getSiguiente();
-                    break;
-                } else {
-                    previo.setSiguiente(actual.getSiguiente());
-                    break;
-                }
-            }
-            previo = actual;
-            actual = actual.getSiguiente();
-            contador ++;
-        }
-    }
-
-
-
 }
