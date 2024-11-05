@@ -1,0 +1,17 @@
+{
+  "name": "reto2",
+  "version": "1.0.0",
+  "description": "Implementacion llamado asincrono JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "David Barragan",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "reto2": "file:"
+  }
+}
